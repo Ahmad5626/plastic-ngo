@@ -10,7 +10,9 @@
    
     <link rel="stylesheet" href="./css/style2.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -64,8 +66,8 @@
                     <img src="./Img/new-logo.png" alt="logo">
                 </div>
                 <nav class="stroke">
-                    <ul class=" items-center justify-between gap-5 text-sm text-black hidden lg:flex  ">
-                        <li class="active py-2 px-8"><a href="#">Home</a></li>
+                    <ul class=" items-center justify-between gap-0 text-sm text-black hidden lg:flex  ">
+                        <li class="active py-2 px-4"><a href="#">Home</a></li>
                         <li><a href="#">About Us </a></li>
                         <li><a href="#">Services </a></li>
                         <li><a href="#">Gallery </a></li>
@@ -99,7 +101,7 @@
 <!-- hero section -->
 
     <section  class="bg-[url(./Img/bg2.webp)] md:h-[100vh] grid bg-no-repeat w-[100%] bg-cover relative">
-        <div class="grid-cols-3 w-[100%] md:w-[55%] py-8 px-8 new-bg md:absolute h-auto md:h-[50%]   md:top-1/2 md:left-1/3 md:-translate-x-1/2 md:-translate-y-1/2  z-20" >
+        <div class="grid-cols-3 w-[100%] md:w-[55%] py-8 px-8 new-bg md:absolute h-auto md:h-[60%]   md:top-1/2 md:left-1/3 md:-translate-x-1/2 md:-translate-y-1/2  z-20" >
           <div class="typewriter flex  justify-center md:justify-between gap-5 md:gap-10 flex-wrap md:flex-nowrap">
             <div class="md:w-1/2">
 
@@ -109,7 +111,9 @@
               
               <div class="text-center">
                 <button class="button ">
+                  <a href="./signup.html">
                   Login
+                </a>
                   
                 </button>
               </div>
@@ -117,9 +121,9 @@
               </div>
 
               <div class="w-3/1">
-                <h1 class="text-4xl text-[#00bf63] ">Join Plastic Shoonya Schools!</h1>
-                <h3 class="text-2xl text-[#00bf63] py-4">An initiative to reduce waste, putting kids at the center of the action.</h3>
-                <h3 class="text-2xl text-[#3972bf]">Sign up today to access FREE resources and start your journey!</h3>
+                <h1 class="hero-section-title text-[#3972bf] p-0 ">Join Plastic Shoonya Schools!</h1>
+                <h3 class="hero-section-title2 text-[#3972bf] py-4">An initiative to reduce waste, putting kids at the center of the action.</h3>
+                <h3 class="text-2xl text-[#204969]">Sign up today to access FREE resources and start your journey!</h3>
 
                
                 </div>
@@ -139,26 +143,12 @@
 
     <section class="py-10 font-[Poppins]">
       <div class="Custom-container flex justify-center gap-10 flex-wrap md:flex-nowrap">
-          <div class="row home-part-b w-[100%] md:w-[50%] wow animate__animated fadeInLeft">
-              <h3 class="text-black text-2xl py-2"><b>Welcome to Plastic Shoonya Schools!</b></h3>
-              <div class="">
-                  <img src="./images/img1.jpg" class="img-fluid" >
-              </div>
-              <div class="col-md-6 col-sm-12 part-b-content text-black py-8">
-                <p>Through different levels of activities, you’ll learn how to reduce plastic waste, recycle, 
-                  and make eco-friendly choices. 
-                  Plus, you’ll get to share your ideas with friends, family, and even your community!</p>
-                  <p>The school with the most points at the end will be declared a <b>Plastic Shoonya Champion </b>
-                  and get a special award for their amazing efforts in keeping our planet plastic-free.</p>
-                  <p>Ready to make a difference? Let’s work together to create a plastic-free future. Every small step counts! 
-                      Join the movement, take action, and make your school a <b>Plastic Shoonya School! 🌍♻️</b></p>
-              </div>
-          </div>
+          
           <div class="row home-part-b w-[100%] md:w-[50%] wow animate__animated fadeInRight" >
              
-              <div class="col-md-6 col-sm-12 part-b-content pt-8 text-black">
+              <div class="col-md-6 col-sm-12 part-b-content pt-0 text-black">
                  
-
+                <h3 class="text-[#204969] text-2xl pb-2 h3"><b>Welcome to Plastic Shoonya Schools!</b></h3>
 
                       <p>Join the Plastic Shoonya Schools movement, where students like you come together to learn, play, and protect the planet by reducing plastic waste!</p>
                       <br>
@@ -169,18 +159,33 @@
                            school and compete with others to become a <b>Plastic Shoonya School!</b>
                       </p>
               </div>
-              <div class="col-md-6 part-b-img md:pt-40">
+              <div class="col-md-6 part-b-img md:pt-20">
                  <img src="./images/img2.jpg" class="img-fluid" >
                   </p>
               </div>
           </div>
+          <div class="row home-part-b w-[100%] md:w-[50%] wow animate__animated fadeInLeft">
+           
+            <div class="">
+                <img src="./images/img1.jpg" class="img-fluid" >
+            </div>
+            <div class="col-md-6 col-sm-12 part-b-content text-black py-8">
+              <p>Through different levels of activities, you’ll learn how to reduce plastic waste, recycle, 
+                and make eco-friendly choices. 
+                Plus, you’ll get to share your ideas with friends, family, and even your community!</p>
+                <p>The school with the most points at the end will be declared a <b>Plastic Shoonya Champion </b>
+                and get a special award for their amazing efforts in keeping our planet plastic-free.</p>
+                <p>Ready to make a difference? Let’s work together to create a plastic-free future. Every small step counts! 
+                    Join the movement, take action, and make your school a <b>Plastic Shoonya School! 🌍♻️</b></p>
+            </div>
+        </div>
       </div>
   </section>
 
 
   <section class="complete-stages">
       <div class="Custom-container">
-        <h3 class="text-black text-2xl text-center"><b>How to Become a Plastic Shoonya School</b></h3>
+        <h3 class=" text-2xl text-center h3 text-[#204969]"><b>How to Become a Plastic Shoonya School</b></h3>
           <div class="row step-stages flex flex-wrap md:flex-nowrap">
               
               <div class="col-md-4 text-center wow animate__animated fadeInLeft">
@@ -189,22 +194,22 @@
                 </div>
                   
                   <h5 style="color: #00bbb4;">ACTIVATE</h5>
-                  <p class="w-[70%] mx-auto">Learn about the dangers of plastic pollution and empower your school to take meaningful action!</p>
+                  <p class="w-[70%] mx-auto Activate-p">Learn about the dangers of plastic pollution and empower your school to take meaningful action!</p>
               </div>
               <div class="col-md-4 wow animate__animated fadeInUp">
                 <div class="w-full text-center">
                   <img src="./Img/new-img1.png" class="img-fluid w-[55%] mx-auto">
                 </div>
                   <h5 style="color: #ffc552;">ANALYSE</h5>
-                  <p class="w-[70%] mx-auto">Find the problem plastics in your school and gear up to take steps towards reducing them.</p>
+                  <p class="w-[70%] mx-auto Activate-p">Find the problem plastics in your school and gear up to take steps towards reducing them.</p>
               </div>
               <div class="col-md-4 wow animate__animated fadeInRight">
                 <div class="w-full text-center">
-                  <img src="./Img/new-img.png" class="img-fluid w-[70%] mx-auto">
+                  <img src="./Img/new-imgg.png" class="img-fluid w-[70%] mx-auto">
                   
                 </div>
                   <h5 style="color: #ff5959;">ACTION</h5>
-                  <p class="w-[70%] mx-auto">Act to eliminate or swap single-use plastics for eco-friendly alternatives.</p>
+                  <p class="w-[70%] mx-auto Activate-p">Act to eliminate or swap single-use plastics for eco-friendly alternatives.</p>
               </div>
           </div>
       </div>
@@ -222,14 +227,14 @@
             <img src="./Img/g1.png" width="100% " alt="">
         </div> -->
         <div class="flex md:justify-between Custom-container py-10 flex-wrap md:flex-nowrap ">
-          <div class="  md:w-1/2 mx-auto wow animate__animated fadeIn ">
-            <h1 class="text-4xl pb-10 text-[#00bf63] ">A message from Aarna and Milo</h1>
-            <p class="text-md text-white pb-6  font-nomal w-[90%] font-[Poppins] font-light wow animate__animated fadeIn">Hello friends, both big and small! I'm Aarna, and this is my ever-so-cheeky dog, Milo. We kicked off our journey with the Plastic Shoonya initiative back when I was 12, after noticing just how much single-use plastic was piling up everywhere, hurting our beautiful planet and the amazing creatures that call it home.</p>
-            <p class="text-md text-white pb-6  font-nomal w-[90%] font-[Poppins] font-light wow animate__animated fadeIn">Milo and I decided it was time to do something about it, not just for us, but for all the animals and future generations. We're on a fun-filled mission to reduce plastic waste and we're super excited to invite you to join us!</p>
-            <p class="text-md text-white pb-6  font-nomal w-[90%] font-[Poppins] font-light wow animate__animated fadeIn">We’re looking for enthusiastic young environmentalists, like you, to hop on board. And hey, we think adults can be pretty cool helpers too!</p>
-            <p class="text-md text-white pb-6  font-nomal w-[90%] font-[Poppins] font-light wow animate__animated fadeIn">If you’re ready to make a difference and have loads of fun along the way, please reach out. Together, we can make our world a cleaner, happier place for everyone, including four-legged friends like Milo!</p>
-            <p class="text-md text-white pb-6  font-nomal w-[90%] font-[Poppins] font-light wow animate__animated fadeIn">Thank you for checking out Plastic Shoonya – your support means the world to us, and to our planet!</p>
-            <p class="text-md text-white pb-6  font-nomal w-[90%] font-[Poppins] font-light wow animate__animated fadeIn">Let’s make a change, one plastic item at a time!</p>
+          <div class="  md:w-1/2 mx-auto wow animate__animated fadeIn message-p ">
+            <h1 class="text-4xl pb-10 text-[white] ">A message from Aarna and Milo</h1>
+            <p class="text-md text-white pb-6  font-nomal w-[90%]  font-light wow animate__animated fadeIn">Hello friends, both big and small! I'm Aarna, and this is my ever-so-cheeky dog, Milo. We kicked off our journey with the Plastic Shoonya initiative back when I was 12, after noticing just how much single-use plastic was piling up everywhere, hurting our beautiful planet and the amazing creatures that call it home.</p>
+            <p class="text-md text-white pb-6  font-nomal w-[90%]  font-light wow animate__animated fadeIn">Milo and I decided it was time to do something about it, not just for us, but for all the animals and future generations. We're on a fun-filled mission to reduce plastic waste and we're super excited to invite you to join us!</p>
+            <p class="text-md text-white pb-6  font-nomal w-[90%]  font-light wow animate__animated fadeIn">We’re looking for enthusiastic young environmentalists, like you, to hop on board. And hey, we think adults can be pretty cool helpers too!</p>
+            <p class="text-md text-white pb-6  font-nomal w-[90%]  font-light wow animate__animated fadeIn">If you’re ready to make a difference and have loads of fun along the way, please reach out. Together, we can make our world a cleaner, happier place for everyone, including four-legged friends like Milo!</p>
+            <p class="text-md text-white pb-6  font-nomal w-[90%]  font-light wow animate__animated fadeIn">Thank you for checking out Plastic Shoonya – your support means the world to us, and to our planet!</p>
+            <p class="text-md text-white pb-6  font-nomal w-[90%] font-light wow animate__animated fadeIn">Let’s make a change, one plastic item at a time!</p>
         </div>
 
         <div class="md:w-1/2">
@@ -240,74 +245,7 @@
 
         
 
-        <!-- <div class="    Custom-container1">
-            
-
-          <div class="swiper mySwiper2">
-            <div class="swiper-wrapper">
-      
-      
-              <div class="swiper-slide bg-[url(./Img/girl1.jpg)] bg-no-repeat bg-center bg-cover rounded-2xl ">
-                <div class="w-full h-full bg-[rgba(0,0,0,0.2)] relative"> 
-                  <div class="w-[70%]   bg-[white] p-2 rounded-2xl absolute  left-[15%] bottom-[15%] Testimonials-box">
-                    <p class="text-sm text-black font-[Poppins] py-2">Lorem ipsum dolor sit amet,
-                      consectetuer adipiscing elit,
-                      sed diam nonummy nibh
-                      e</p>
-                    <h1 class="text-xl text-black font-semibold">Aarna</h1>
-        
-                   </div>
-                   </div>
-              </div>
-      
-             
-              <div class="swiper-slide bg-[url(./Img/dog1.jpg)] bg-no-repeat bg-center bg-cover rounded-2xl ">
-                <div class="w-full h-full bg-[rgba(0,0,0,0.2)] relative">
-                 <div class="w-[70%]   bg-[white] p-2 rounded-2xl absolute  left-[15%] bottom-[15%] Testimonials-box">
-                  <p class="text-sm text-black font-[Poppins] py-2">Lorem ipsum dolor sit amet,
-                    consectetuer adipiscing elit,
-                    sed diam nonummy nibh
-                    e</p>
-                  <h1 class="text-xl text-black font-semibold"> Milo</h1>
-      
-                 </div>
-                   </div>
-              </div>
-      
-             
-              <div class="swiper-slide bg-[url(./Img/test1.png)] bg-no-repeat bg-center bg-cover rounded-2xl ">
-                <div class="w-full h-full bg-[rgba(0,0,0,0.2)] relative">
-                 <div class="w-[70%]   bg-[white] p-2 rounded-2xl absolute  left-[15%] bottom-[15%] Testimonials-box">
-                  <p class="text-sm text-black font-[Poppins] py-2">Lorem ipsum dolor sit amet,
-                    consectetuer adipiscing elit,
-                    sed diam nonummy nibh
-                    e</p>
-                  <h1 class="text-xl text-black font-semibold">Ravi Kumar</h1>
-      
-                 </div>
-                   </div>
-              </div>
-      
-              <div class="swiper-slide bg-[url(./Img/test2.png)] bg-no-repeat bg-center bg-cover rounded-2xl ">
-                <div class="w-full h-full bg-[rgba(0,0,0,0.2)] relative">
-                 <div class="w-[70%]   bg-[white] p-2 rounded-2xl absolute  left-[15%] bottom-[15%] Testimonials-box">
-                  <p class="text-sm text-black font-[Poppins] py-2">Lorem ipsum dolor sit amet,
-                    consectetuer adipiscing elit,
-                    sed diam nonummy nibh
-                    e</p>
-                  <h1 class="text-xl text-black font-semibold">Karthik V.</h1>
-      
-                 </div>
-                   </div>
-              </div>
-              
-            </div>
-            <div class="swiper-button-next new-swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </div> -->
+       
 
      
 
@@ -316,10 +254,52 @@
 
    
 
+<div class="my-20 bg-[#3972bf] py-32 new-clip-path">
+  <div class="Custom-container flex md:justify-between items-center flex-wrap md:flex-nowrap gap-2">
 
+    <div class="w-full md:w-1/2">
+      <p class=" text-white">Love what you see? Join the PCS fun and become a waste-busting hero with kids like YOU at the centre of the action! Register now to grab FREE resources and start your exciting journey today!</p>
+
+  </div>
+  <div class="md:w-1/2">
+   
+    <div class="text-center">
+      <button class="button2 ">
+        <a href="./signup.html">
+        Login
+      </a>
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="bg-[black] text-white">
+  <div class="Custom-container py-4 flex items-center flex-wrap md:flex-nowrap gap-4 md:gap-0 justify-center md:justify-between">
+    <div class="w-full md:w-1/4 text-center">
+      <p>2024 Kids Against Plastic
+      </p>
+      </div>
+      <div class=" w-full md:w-1/4  text-center">
+        <p>Registered Charity:1179917 
+        </p>
+        </div>
+
+        <div class="w-full md:w-1/4  text-center">
+          <p>Privacy Policy
+          </p>
+          </div>
+
+          <div class="w-full md:w-1/4  text-center">
+            <p>Contact Us
+            </p>
+            </div>
+
+    </div>
+  </div>
      
 
-
+<!-- 
        <div class="w-full py-4  flex items-center justify-center bg-black">
         <div class="md:w-2/3 w-full px-4 text-white flex flex-col">
             <div class="w-full text-7xl font-bold">
@@ -364,7 +344,7 @@
                 <p class="w-full text-center my-12 text-gray-600">Copyright © 2024 Plastic Shoonya. All rights reserved.</p>
             </div>
         </div>
-    </div>
+    </div> -->
  
  
 

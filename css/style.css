@@ -1,10 +1,10 @@
-@font-face {
+/* @font-face {
     font-family:  Monschon;
     src: url(../monschone-regular-monschone-regular-400.otf);
-  }
+  } */
 
 body{
-    font-family:  Monschon;
+  font-family: "Montserrat", sans-serif;
 }
 
 .Custom-container{
@@ -33,7 +33,8 @@ nav ul li a {
   
   text-decoration: none;
   
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 12px;
   text-transform: uppercase;
   margin: 0 10px;
 }
@@ -81,6 +82,16 @@ nav.stroke ul li a:hover:after {
     background: rgb(4,4,4);
     background: linear-gradient(90deg, rgba(4,4,4,1) 0%, rgba(93,82,82,0.8240546218487395) 50%, rgba(252,176,69,0.01453081232492992) 100%);
 }
+.hero-section-title{
+font-size: 32px ;
+font-family: "Montserrat", sans-serif;
+font-weight: 500;
+}
+.hero-section-title2{
+  font-size: 24px ;
+font-family: "Montserrat", sans-serif;
+font-weight: 500;
+}
 .slider1{
     top: 11% !important;
 }
@@ -100,6 +111,13 @@ nav.stroke ul li a:hover:after {
 
  
 }
+.h3{
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color:#204969;
+  margin-bottom: 0px;
+}
 .new-rotate{
     
 }
@@ -107,6 +125,7 @@ nav.stroke ul li a:hover:after {
     transform: rotateY(168deg)
 
 }
+
 
 
 
@@ -163,6 +182,14 @@ nav.stroke ul li a:hover:after {
    background-color: #3972bf;
    color: white;
    padding: 10px 20px ;
+   border-radius: 10px ;
+   font-size: 20px;
+  }
+  .button2{
+    background-color: white;
+   color: #3972bf;
+   padding: 10px 20px ;
+   font-family: "Montserrat", sans-serif;
    border-radius: 10px ;
    font-size: 20px;
   }
@@ -250,6 +277,19 @@ transition: 0.5s;
   }
   .home-part-b p{
       font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+  }
+  .Activate-p{
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: #204969;
+  }
+  .message-p{
+    font-size: 16px ;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
   }
   .part-b-content{
       padding: 10px 0;
@@ -342,4 +382,6 @@ transition: 0.5s;
       padding: 10px 0;
   }
 
-  
+  .new-clip-path{
+    clip-path: polygon(0 0, 100% 36%, 100% 100%, 0% 100%);
+  }
