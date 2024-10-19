@@ -2,7 +2,9 @@
     font-family:  Monschon;
     src: url(../monschone-regular-monschone-regular-400.otf);
   } */
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: "Montserrat", sans-serif;
 }
@@ -384,4 +386,16 @@ transition: 0.5s;
 
   .new-clip-path{
     clip-path: polygon(0 0, 100% 36%, 100% 100%, 0% 100%);
+  }
+  .complete-stages .step-stages > div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+  }
+  .complete-stages .step-stages > div .arrow-rotate{
+    transform: rotate(-45deg);
+    transition: 0.5s;
+  }
+  .complete-stages .step-stages > div:hover .arrow-rotate{
+ transform: rotate(0deg);
+   
   }

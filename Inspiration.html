@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Display Board</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/style2.css">
+  <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="animate.css">
+  <style>
+   
+
+    .board-section{
+        background-color: #004a6c;
+    }
+    .bs-heading {
+        max-width: 970px;
+        margin: 0 auto;
+    }
+    .cart, .cart1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    padding: .6em 1.2em;
+    line-height: 1;
+    font-weight: 400;
+    position:absolute ;
+    top: 6%;
+    left:25%;
+    max-width: 156px;
+    text-align: left;
+    }
+    
+    .cart::before{
+        content: url('./images/level3.png');
+        padding-right: 2px;
+        
+    }
+    .cart1::before{
+        content: url('./images/level1.png');
+        padding-right: 2px;
+    }
+    .cart-content{
+        padding: 45px 28px;
+        text-align: left;
+        gap: 35px;
+
+    }
+    .cart-content h3{
+        color: #009ade;
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .cart-content p{
+    margin: 0;
+    line-height: 1.5em;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+    }
+    .btn{
+        background-color: #44bda9;
+        color: #fff;
+        font-weight: 300;
+        max-width: 350px;
+        margin: 0 auto;
+        font-size: 21px;
+        text-transform: uppercase;
+        /* padding: 21px 35px; */
+        border-radius: 8px;
+       
+
+    }
+    .overlay{
+        background-image:linear-gradient(0deg, rgba(0, 0, 0, .35), transparent 75%);
+    }
+    .overlay:hover{
+        background-image:linear-gradient(0deg, rgba(101, 100, 100, 0.35), transparent 75%);
+        cursor: pointer;
+    }
+    .svg-img{
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
+  .cart-content a:hover{
+        text-decoration: none;
+        color: #8d8b8b;
+    }
+  </style>
+</head>
+<body class=" font-sans">
+  <!-- header -->
+
+  <header class="py-2 wow animate__animated animate__fadeInUp bg-white" >
+    <div class="Custom-container ">
+        <div class=" flex items-center justify-between">
+
+
+            <div class="logo">
+                <img src="./Img/new-logo.png" alt="logo">
+            </div>
+            <nav class="stroke">
+                <ul class=" items-center justify-between gap-0 text-sm text-black hidden lg:flex  ">
+                    <li ><a href="index.html">Home</a></li>
+                    <li class="active py-2 px-4"><a href="Inspiration.html">Inspiration </a></li>
+                    <li><a href="resorce.html"> Resources </a></li>
+                    <li><a href="signup.html">Register </a></li>
+                    <li><a href="login.html">login </a></li>
+                </ul>
+                <div class="drawer">
+                  <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                  <div class="drawer-content">
+                    <!-- Page content here -->
+                    <label for="my-drawer" class="lg:hidden  p-2 px-4 text-white rounded-xl text-2xl font-semibold bg-[#3972bf] ">☰</label>
+                  </div>
+                  <div class="drawer-side z-30" >
+                    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                    <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+                      <!-- Sidebar content here -->
+                      <li ><a href="index.html">Home</a></li>
+                      <li class="active py-2 px-4"><a href="Inspiration.html">Inspiration </a></li>
+                      <li><a href="resorce.html"> Resources </a></li>
+                      <li><a href="signup.html">Register </a></li>
+                      <li><a href="login.html">login </a></li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+        </div>
+
+
+</header>
+
+  <!-- Display Board Section -->
+  <section class="py-12 board-section">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl text-white font-bold mb-6">DISPLAY BOARD</h2>
+      <p class="bs-heading text-white mb-8">
+        If you need some inspiration to help you get started or complete a particular step or Level, you're in the right place! 
+        Take a look at the amazing evidence uploaded by other schools taking part in the Plastic Clever Schools initiative.
+      </p>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 ">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg relative">
+          <div class="board-img bg-cover bg-center">
+            <div class="overlay">
+            <img src="./images/board1.png" alt="Plastic Clever Schools" class="w-full">
+            <span class="cart bg-red-500 text-white px-4 py-1 rounded-full text-xs">ACT PART 1 (PHOTO)</span>
+          </div>
+        </div>
+          <div class="cart-content">
+            <h3 class="text-blue-600 text-xl font-semibold mb-2">Laminating Policy</h3>
+            <p class="text-gray-700 mb-4">Our laminating policy, written by the Eco committee and agreed.</p>
+            <a href="#" class="link-btn text-blue-500 hover:underline">READ MORE &raquo;</a>
+            </div>
+            <svg class="svg-img">
+                <image width="66" height="77" href="./images/EVOLUTION_BLUE_STAGE_3.svg" />
+              </svg>
+        </div>
+       
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-lg relative ">
+            <div class="board-img bg-cover bg-center overlay">
+              <img src="./images/board2.png" alt="Plastic Clever Schools" class="w-full bg-dark bg-opacity-5">
+              <span class="cart1 px-3 py-1 rounded-full text-xs" style="background-color: #00bbb4;">Inspire Part 1 (photo)
+            </span>
+            </div>
+            <div class="cart-content">
+                <h3 class="text-blue-600 text-xl font-semibold mb-2">.Ευαισθητοποιούμαστε σχετικά με την αποστολή μας</h3>
+                <p class="text-gray-700 mb-4">Ολοι μαζί μαθαίνουμε από το υλικό του plastic clever school
+
+                </p>
+                <a href="#" class="text-blue-500 hover:underline">READ MORE &raquo;</a>
+                </div>
+                <svg class="svg-img">
+                    <image width="66" height="77" href="./images/EVOLUTION_BLUE_STAGE_1.svg" />
+                  </svg>
+          </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-lg relative ">
+            <div class="board-img bg-cover bg-center overlay">
+              <img src="./images/board1.png" alt="Plastic Clever Schools" class="w-full bg-dark bg-opacity-5">
+              <span class="cart1 px-3 py-1 rounded-full text-xs"  style="background-color: #ffc557;">Investigate Part 2 (photo)
+            </span>
+            </div>
+            <div class="cart-content">
+                <h3 class="text-blue-600 text-xl font-semibold mb-2">Lilleshall Primary School Action Plan</h3>
+                <p class="text-gray-700 mb-4">Here is our action plan to reduce single use plastic</p>
+                <a href="#" class="text-blue-500 hover:underline">READ MORE &raquo;</a>
+                </div>
+                <svg class="svg-img">
+                    <image width="66" height="77" href="./images/EVOLUTION_BLUE_STAGE_3.svg" />
+                  </svg>
+          </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-lg shadow-lg relative ">
+            <div class="board-img bg-cover bg-center overlay">
+              <img src="./images/board1.png" alt="Plastic Clever Schools" class="w-full bg-dark bg-opacity-5">
+              <span class="cart1 px-3 py-1 rounded-full text-xs "style="background-color:#ffc557;">Investigate Part 1 (photo)
+            </span>
+            </div> 
+            <div class="cart-content">
+                <h3 class="text-blue-600 text-xl font-semibold mb-2">Lilleshall Primary School Plastic Audit Results</h3>
+                <p class="text-gray-700 mb-4">Lilleshall Primary School plastic audit results PDF Upload: Audit results</p>
+                <a href="#" class="text-blue-500 hover:underline">READ MORE &raquo;</a>
+                </div>
+                <svg class="svg-img">
+                    <image width="66" height="77" href="./images/EVOLUTION_BLUE_STAGE_3.svg" />
+                  </svg>
+          </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white rounded-lg shadow-lg relative ">
+            <div class="board-img bg-cover bg-center overlay">
+              <img src="./images/board1.png" alt="Plastic Clever Schools" class="w-full bg-dark bg-opacity-5">
+              <span class="cart bg-red-500 text-white px-3 py-1 rounded-full text-xs ">Act Part 3 (video)
+            </span>
+            </div>
+            <div class="cart-content">
+                <h3 class="text-blue-600 text-xl font-semibold mb-2">Level 3 Act</h3>
+                <p class="text-gray-700 mb-4">Since we embarked on our journey we have seen less</p>
+                <a href="#" class="text-blue-500 hover:underline">READ MORE &raquo;</a>
+                </div>
+                <svg class="svg-img">
+                    <image width="66" height="77" href="./images/EVOLUTION_ORANGE_STAGE_4.svg" />
+                  </svg>
+          </div>
+      </div>
+
+      <!-- Call to Action Button -->
+      <div class="btn mt-12">
+        <a href="#" class="px-6  rounded-full text-lg transition">GET MORE INSPIRATION</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <div class="bg-[black] text-white">
+    <div class="Custom-container py-4 flex items-center flex-wrap md:flex-nowrap gap-4 md:gap-0 justify-center md:justify-between">
+      <div class="w-full md:w-1/4 text-center">
+        <p>2024 Kids Against Plastic
+        </p>
+        </div>
+        <div class=" w-full md:w-1/4  text-center">
+          <p>Registered Charity:1179917 
+          </p>
+          </div>
+  
+          <div class="w-full md:w-1/4  text-center">
+            <p>Privacy Policy
+            </p>
+            </div>
+  
+            <div class="w-full md:w-1/4  text-center">
+              <p>Contact Us
+              </p>
+              </div>
+  
+      </div>
+    </div>
+</body>
+</html>

@@ -16,45 +16,48 @@
 <body>
       <!-- header -->
 
-      <header class="py-2 wow animate__animated animate__fadeInUp" >
-        <div class="Custom-container ">
-            <div class=" flex items-center justify-between">
+      <!-- header -->
+
+  <header class="py-2 wow animate__animated animate__fadeInUp bg-white" >
+    <div class="Custom-container ">
+        <div class=" flex items-center justify-between">
 
 
-                <div class="logo">
-                    <img src="./Img/new-logo.png" alt="logo">
-                </div>
-                <nav class="stroke">
-                    <ul class=" items-center justify-between gap-0 text-sm text-black hidden lg:flex  ">
-                        <li class="active py-2 px-4"><a href="#">Home</a></li>
-                        <li><a href="#">About Us </a></li>
-                        <li><a href="#">Services </a></li>
-                        <li><a href="#">Gallery </a></li>
-                        <li><a href="#">Contact Us </a></li>
+            <div class="logo">
+                <img src="./Img/new-logo.png" alt="logo">
+            </div>
+            <nav class="stroke">
+                <ul class=" items-center justify-between gap-0 text-sm text-black hidden lg:flex  ">
+                    <li ><a href="index.html">Home</a></li>
+                    <li><a href="Inspiration.html">Inspiration </a></li>
+                    <li ><a href="resorce.html"> Resources </a></li>
+                    <li class="active py-2 px-4"><a href="signup.html">Register </a></li>
+                    <li><a href="login.html">login </a></li>
+                </ul>
+                <div class="drawer">
+                  <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                  <div class="drawer-content">
+                    <!-- Page content here -->
+                    <label for="my-drawer" class="lg:hidden  p-2 px-4 text-white rounded-xl text-2xl font-semibold bg-[#3972bf] ">☰</label>
+                  </div>
+                  <div class="drawer-side z-30" >
+                    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                    <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+                      <!-- Sidebar content here -->
+                      <li ><a href="index.html">Home</a></li>
+                      <li ><a href="Inspiration.html">Inspiration </a></li>
+                      <li ><a href="resorce.html"> Resources </a></li>
+                      <li class="active py-2 px-4"><a href="signup.html">Register </a></li>
+                      <li><a href="login.html">login </a></li>
                     </ul>
-                    <div class="drawer">
-                      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-                      <div class="drawer-content">
-                        <!-- Page content here -->
-                        <label for="my-drawer" class="lg:hidden  p-2 px-4 text-white rounded-xl text-2xl font-semibold bg-[#3972bf] ">☰</label>
-                      </div>
-                      <div class="drawer-side z-30" >
-                        <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-                        <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-                          <!-- Sidebar content here -->
-                          <li><a href="#">About Us </a></li>
-                        <li><a href="#">Services </a></li>
-                        <li><a href="#">Gallery </a></li>
-                        <li><a href="#">Contact Us </a></li>
-                        </ul>
-                      </div>
-                    </div>
-                </nav>
-            </div>
-            </div>
+                  </div>
+                </div>
+            </nav>
+        </div>
+        </div>
 
 
-    </header>
+</header>
 
     <section>
         <div class="Custom-container">
@@ -68,11 +71,9 @@
                         <p><i>Yay, you want to join!</i></p>
                     </div>
                     <div class="col-8 content-section">
-                        <p><strong>Hi!</strong></p>
-                        <h4>Great, you’re interested in joining the Plastic Clever Schools Challenge!</h4>
-                        <p>The good news is, joining is very simple. Just complete the registration form 
-                            below and we’ll get back to you via email (so make sure you check your SPAM folder 
-                            if you haven’t heard from us after a day or two).
+                        <p><strong>Hi there!</strong></p>
+                        <h4>Awesome! You're excited to join the Plastic Shoonya Schools Challenge!</h4>
+                        <p>Signing up is super easy. Just fill out the registration form below, and we'll get in touch with you via email. (Be sure to check your SPAM folder if you don't hear from us in a day or two.)
                         </p>
                         <div class="alert-box">
                             <h5>Please read!</h5>
@@ -86,93 +87,117 @@
             </div>
         </div>
     </section>
-    <section class="section2">
-        <div class="Custom-container">
-            <div class="row section1">
-                <div class="col-6 contact-form">
-                    <form action="/action_page.php">
-                        <label for="fname">Your name (required)</label><br>
-                        <input type="text" id="fname" name="fname" value=""><br><br>
-                        <label for="lname"> Your email (Official school / council email required, please)</label><br>
-                        <input type="text" id="lname" name="lname" value=""><br><br>
-                        <label for="lname">Please confirm your email (required)</label><br>
-                        <input type="text" id="lname" name="lname" value=""><br><br>
-                        <label for="lname">School or Council Name (required)</label><br>
-                        <input type="text" id="lname" name="lname" value=""><br><br>
-                        <label for="postcode">Postcode (required)</label><br>
-                        <input type="number" id="postcode" name="postcode" value=""><br><br>
-                        <label for="cars">Choose a car:</label><br>
-                        <select id="cars" name="cars" size="0">
-                          <option value="volvo">Volvo</option>
-                          <option value="saab"></option>
-                          <option value="fiat"></option>
-                          <option value="audi"></option>
-                        </select><br><br>
-                        <label for="lname">Contact telephone number (required)</label><br>
-                        <input type="text" id="lname" name="lname" value=""><br><br>
-                        <label for="lname"> URN (or SEED / DE / Role number)</label><br>
-                        <input type="text" id="lname" name="lname" value=""><br><br>
-                        <label for="lname">Type of school</label><br>
-                        <select id="cars" name="cars" size="0">
-                            <option value="volvo">Type of school -Primary </option>
-                            <option value="saab">Primary Secondary </option>
-                            <option value="fiat">Middle </option>
-                            <option value="audi">All-through </option>
-                            <option value="audi">College </option>
-                            <option value="audi">Nursery </option>
-                            <option value="audi">Other  </option>
-                          </select><br><br>
-                        <label for="lname">Other</label><br>
-                        <input type="text" id="lname" name="lname" value=""><br><br>
-                        <label for="lname">If you have been referred by another school, please name the school</label><br>
-                        <input type="text" id="lname" name="lname" value=""><br><br>
-                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="checkbox">
-                        <label for=""> Confirmation: Yes, please register our school</label><br>
-                        <input type="checkbox" id="" name="" value="" class="checkbox">
-                        <label for="">I understand I may need to check my SPAM folder to find registration confirmation.</label><br>
-                        <input type="submit" value="Join" class="submit">
-                      </form> 
-                </div>
-                <div class="col-6 next-sec">
-                    <div class="what-sec">
-                        <i class="fa-solid fa-envelope"></i>
-                        <h3>WHAT HAPPENS NEXT?</h3>
-                    </div>
-                    <p>On the day you join you will receive a confirmation and welcome email and your school 
-                        pin on the Progress Map will change colour to show your account has been activated and 
-                        that you are working on <strong>Level 1 - Inspire.</strong></p>
-                       <img src="./images/PIN-CHANGE2.png">
-                          <p>Then, you're all set to go and will be able to <strong>Login</strong> and:</p>
 
-                          <!-- List of Features -->
-                          <ul>
-                            <li>Set your team name choose your team avatar</li>
-                            <li>Upload evidence to progress through the Challenge levels</li>
-                            <li>Earn Bonus points that go towards winning an award</li>
-                          </ul>
-                      
-                          <!-- Additional Information -->
-                          <div class="bonus-section">
-                            <img src="./images/workbook-montage.png">
-                            <p><strong>PLUS</strong>, all schools that join the Challenge will receive a FREE 
-                                <strong>Teacher Guide</strong> and <strong>Pupil Challenge Workbook</strong> 
-                                packed with fact sheets and worksheets to provide step-by-step support throughout
-                                 the Plastics Clever journey.</p>
-                          </div>
-                          <p class="lastpara">Amy will also be running webinars and workshops to make sure all schools feel fully supported.</p>
-                        <p>For more information, see <span> How To Become Plastic Clever.</span></p>
-                </div>
-            </div>
-        </div>  
-    </section>
-    <section class="last-section">
-        <div class="Custom-container">
-            <h2>Hmm ...</h2>
-            <h5><strong>When are you going to join?</strong></h5>
-            <span>1055</span>
-            <p>schools have joined so far!</p>
+
+    <div class="container">
+      <form action="">
+          <div class="row">
+              <div class="column">
+               
+                  <div class="input-box">
+                      <span>Your Name (required)  :</span>
+                      <input type="text" placeholder="Your Name">
+                  </div>
+                  <div class="input-box">
+                      <span>Your email (Official school email required, please)  </span>
+                      <input type="email" placeholder="example@example.com">
+                  </div>
+                  <div class="input-box">
+                      <span>Please confirm your email (required)  </span>
+                      <input type="text" placeholder="example@example.com">
+                  </div>
+                 
+                  <div class="flex">
+                      <div class="input-box">
+                          <span> Postcode (required)  </span>
+                          <input type="number" placeholder="123 456">
+                      </div>
+                      <div class="input-box">
+                          <span>Country (required)  </span>
+                          <input type="text" placeholder="Country">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="column">
+                
+                <div class="input-box">
+                  <span>School Name (required)  </span>
+                  <input type="text" placeholder="School Name">
+              </div>
+                  <div class="input-box">
+                      <span>Contact telephone number (required)  </span>
+                      <input type="email" placeholder=" Phone Number">
+                  </div>
+                  <div class="input-box">
+                      <span>Type of school -Primary </span>
+                      <select name="" id="">
+                          <option value="">Primary </option>
+                          <option value="">Secondary</option>
+                          <option value="">Middle</option>
+                          <option value="">All-through</option>
+                          <option value="">College</option>
+                          <option value="">Nursery</option>
+                          <option value="">Other</option>
+                      </select>
+                  </div>
+                 
+                  <div class="flex">
+                      <div class="input-box">
+                          <span>Confirmation: Yes, please register our school</span>
+                          <input type="checkbox" placeholder="2030">
+                      </div>
+                      <div class="input-box">
+                          <span> I understand I may need to check my SPAM folder to find registration confirmation.</span>
+                          <input type="checkbox" placeholder="123">
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <button type="submit" class="btn">Submit</button>
+      </form>
+  </div>
+  <div class="Custom-container">
+    <div class="row section1">
+
+      <div class="col-6 next-sec">
+        <div class="what-sec">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>WHAT HAPPENS NEXT?</h3>
         </div>
-    </section>
+        <p>Once you join, you’ll receive a confirmation and welcome email, and your school’s color on the leaderboard will change, showing that your account is activated and you're ready to begin  <strong>Level 1 - Activate.</strong></p>
+           <img src="./images/PIN-CHANGE2.png">
+              <p>After that, you’re all set to log  and:<strong>login</strong> and:</p>
+    
+              <!-- List of Features -->
+              <ul>
+                <li>Choose your team name and select a fun team avatar</li>
+                <li>Upload your progress to move through the Challenge levels</li>
+                <li>	Earn bonus points to help your school win exciting awards</li>
+              </ul>
+          
+              <!-- Additional Information -->
+              <div class="bonus-section">
+                <img src="./images/workbook-montage.png">
+                <p><strong>BONUS:</strong>Every school that joins the Challenge will get a FREE Teacher Guide and Pupil Challenge Workbook, filled with fact sheets and step-by-step worksheets to guide you through the Plastic Shoonya journey!</p>
+              </div>
+              <p class="lastpara">Aarna & Milo will also be hosting webinars and workshops to make sure all schools feel fully supported on their mission.</p>
+            <p>For more details, check out our guide on How to Go <strong>Plastic Shoonya  School!</strong> </p>
+    </div>
+
+    <div class="col-6">
+        <img src="./Img/contact.png" alt="page2img">
+    </div>
+    </div>
+   
+  </div>
+
+ 
+   
+
+
+    
 
     <div class="bg-[black] text-white">
         <div class="Custom-Custom-container py-4 flex items-center flex-wrap md:flex-nowrap gap-4 md:gap-0 justify-center md:justify-between">

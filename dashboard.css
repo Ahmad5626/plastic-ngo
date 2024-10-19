@@ -1,0 +1,120 @@
+.side-nav .active{
+    background-color: #3972bf;
+    border-radius: 2px;
+    color: white;
+    margin-top: 20px;
+}
+.side-nav{
+    padding-left: 0rem !important;
+}
+.side-nav img{
+    width: 15%;
+}
+.active a{
+    color: white !important;
+}
+.side-nav a{
+    text-decoration: none;
+    color: #737376;
+    font-size: 14px;
+}
+.side-nav li{
+   margin: 5side-navpx 20px;
+    list-style: none;
+    padding: 5px; 
+    margin: 10px 0px;
+}
+.bord-area{
+    background-color: #EDF6F9;
+    padding: 20px;
+}
+.card-body{
+    min-height: 150px;
+}
+.card-body p{
+    font-size: 14px;
+    color: #646464;
+    font-weight: 600px;
+ 
+}
+.card-body span{
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #313131;
+    line-height: 0.2;
+}
+.card-body a, img{
+    display: inline-block;
+    text-decoration: none;
+    max-width: 200px;
+    margin-right: 8px;
+}
+
+.crt-btn a{
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 6px;
+    margin-right: 5px;
+    border: 1px solid #313131;
+    color: #313131;
+    background-color: #F9FAFC;
+}
+  
+
+.tr{
+  background-color: #e0e0e0;
+}
+.bord-area  th, td{
+    font-size: 14px;
+  
+}
+.bord-area h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+.text-color{
+    color: #313131;
+}
+.custom-bg-row {
+    background-color: #f0f8ff; /* Light blue */
+}
+
+/*  */
+ /* Table and Row Styling */
+ .table-custom {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .table-custom th, .table-custom td {
+    padding: 15px;
+    text-align: left;
+  }
+
+  .table-custom thead {
+    background-color: #f9fafb;
+    border-bottom: 2px solid #d2d0d0;
+    color: #616161;
+    font-size: 12px;
+  }
+
+  .table-custom tbody tr {
+    border-bottom: 1px solid #d5d2d2;
+  }
+
+  .table-custom tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  /* Avatar Styling */
+
+
+.lesson-icon img{
+    width: 100%;
+}
