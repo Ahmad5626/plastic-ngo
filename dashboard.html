@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js/include.js" defer></script>
     <meta name="viewport" content="width=1024">
 
@@ -215,10 +216,62 @@
   border-radius: 10px;
   
 }
+
+@media(min-width: 992px){
+  .graf{
+    row-gap: 10px;
+  }
+}
       </style>
 </head>
 
 <body>
+
+  <div  class="Schedule-main">
+    <div id="form-div">
+      <i class="close-menu fa-solid fa-x" onclick="showScheduleForm()"></i>
+      <form class="form" id="form1">
+        <h3 style="text-align: center;">Upload Evidence</h3>
+        
+        <p class="name">
+          <span>Browse to Upload</span>
+          <input name="file" type="file" class=" feedback-input" id="name" multiple />
+        </p>
+        
+        <p class="name">
+          <span>Name of activity</span>
+          <input name="activity" type="text" class=" feedback-input" id="activity" placeholder="activity" />
+        </p>
+        
+        <p class="name">
+          <span>Discription</span>
+          <textarea name="Discription"  class=" feedback-input" id="Discription" placeholder="Discription" ></textarea>
+        </p>
+        <p class="name">
+          <span>No of people participated</span>
+
+          <input name="participated" type="number" class=" feedback-input" id="participated" placeholder="Participated" />
+        </p>
+        <p class="name">
+          <span>No cy people impacted</span>
+
+          <input name="impacted" type="number" class=" feedback-input" id="number" placeholder="Impacted" />
+        </p>
+        
+        
+        
+        <div class="submit">
+          <button class="tn-upper  btn">
+            <a href="thankyouSchedule.html"  >Upload</a>
+          </button>
+          
+          
+        </div>
+      </form>
+    </div>
+  </div>
+
+
     <header class="bg-white shadow-sm">
         <div class="container-fluid row py-2">
             <div class="col-md-6 d-flex align-items-center gap-5 px-5">
@@ -276,8 +329,8 @@
                            
                           </div>
                           <div class="profile-img-2-right">
-                            <div class="row">
-                              <div class="col-md-4">
+                            <div class="row graf">
+                              <div class="col-md-6 col-xl-4">
                                  
                                       <div class="lesson-card ACTIVATE">
                                           <div class="lesson-details">
@@ -289,7 +342,7 @@
 
                                             
                                             <div class="upload">
-                                             <button>upload Evidence</button> 
+                                             <button onclick="showScheduleForm()">Upload Evidence</button> 
                                             </div>
                                           </div>
                                           <div class="progress-circle">
@@ -305,7 +358,7 @@
                                           
                                         </div>
                               </div>
-                              <div class="col-md-4">
+                              <div class="col-md-6 col-xl-4">
                                  
                                 <div class="lesson-card ANALYSE">
                                   <div class="lesson-details">
@@ -327,7 +380,7 @@
                                   </div>
                                 </div>
                           </div>
-                          <div class="col-md-4">
+                          <div class="col-md-6 col-xl-4">
                                  
                             <div class="lesson-card ACTION">
                               <div class="lesson-details">
@@ -423,98 +476,7 @@
                           
 
 
-                          <!-- <div class="flex justify-center">
-                            <img src="./Img/test2.png" alt=""
-                              class="rounded-full mx-auto absolute -top-20 w-32 h-32 shadow-md border-4 border-white transition duration-200 transform hover:scale-110 object-cover">
-                          </div>
-                  
-                          <div class="mt-16">
-                            <h1 class="font-bold text-center text-3xl text-gray-900">Rakesh Kumar</h1>
-                            <p class="text-center text-sm text-gray-400 font-medium">Sp.jain school</p>
-                            <p>
-                              <span>
-                  
-                              </span>
-                            </p>
-                            <div class="my-5 px-6">
-                              <a href="#"
-                                class="text-gray-200 block rounded-lg text-center font-medium leading-6 px-6 py-3 bg-gray-900 hover:bg-black hover:text-white">Connect
-                                with <span class="font-bold">Plastic Shoonya</span></a>
-                            </div>
-                            <div class="flex justify-between items-center my-5 px-6">
-                              <a href=""
-                                class="text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded transition duration-150 ease-in font-medium text-sm text-center w-full py-3">Facebook</a>
-                              <a href=""
-                                class="text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded transition duration-150 ease-in font-medium text-sm text-center w-full py-3">Twitter</a>
-                              <a href=""
-                                class="text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded transition duration-150 ease-in font-medium text-sm text-center w-full py-3">Instagram</a>
-                              <a href=""
-                                class="text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded transition duration-150 ease-in font-medium text-sm text-center w-full py-3">Email</a>
-                            </div>
-                  
-                            <div class="w-full">
-                              <h3 class="font-medium text-gray-900 text-left px-6"></h3>
-                              <div class="mt-5 w-full flex flex-col items-center overflow-hidden text-sm">
-                                <a href="#"
-                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150">
-                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
-                                    class="rounded-full h-6 shadow-md inline-block mr-2">
-                                  <b class=" font-semibold">School Type: </b>
-                                  School
-                  
-                                </a>
-                  
-                                <a href="#"
-                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150">
-                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
-                                    class="rounded-full h-6 shadow-md inline-block mr-2">
-                                  <b class=" font-semibold">School Address : </b>
-                                  Delhi India
-                                </a>
-                  
-                                <a href="#"
-                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150">
-                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
-                                    class="rounded-full h-6 shadow-md inline-block mr-2">
-                                  <b class=" font-semibold">Email address: </b>
-                                  rakesh@gmail.com
-                                </a>
-                  
-                                <a href="#"
-                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150">
-                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
-                                    class="rounded-full h-6 shadow-md inline-block mr-2">
-                                  <b class=" font-semibold">City: </b>
-                                  delhi
-                                </a>
-                  
-                                <a href="#"
-                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150 overflow-hidden">
-                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
-                                    class="rounded-full h-6 shadow-md inline-block mr-2">
-                                  <b class=" font-semibold">State: </b>
-                                  Delhi
-                                </a>
-                                <a href="#"
-                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150 overflow-hidden">
-                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
-                                    class="rounded-full h-6 shadow-md inline-block mr-2">
-                                  <b class=" font-semibold">Pincode: </b>
-                                  110001
-                                </a>
-                                <a href="#"
-                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150 overflow-hidden">
-                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
-                                    class="rounded-full h-6 shadow-md inline-block mr-2">
-                                  <b class=" font-semibold">Phone Number: </b>
-                                  9876543210
-                                </a>
-                  
-                  
-                  
-                              </div>
-                            </div>
-                          </div> -->
+                        
                         </div>
                   
                       </div>
@@ -528,7 +490,14 @@
         </div>
     </section>
 
-
+<script>
+      function showScheduleForm(){
+      let Form = document.getElementsByClassName('Schedule-main')[0];
+      console.log(Form);
+      
+      Form.classList.toggle('showScheduleForm');
+    }
+</script>
     
 </body>
 
