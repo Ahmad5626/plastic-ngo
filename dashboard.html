@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="dashboard.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -130,6 +131,67 @@
           color: white;
           font-size: 18px;
         }
+        .profile-img-1{
+          width: 100%;
+          height: 150px;
+        }
+        .profile-img-1 img{
+          width: 100%;
+          height: 100%;
+          max-width: 100%;
+        }
+        .profile-img-2 {
+          position: relative;
+          top: -100px;
+          padding: 20px;
+        }
+        .profile-img-2-left-img{
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+        
+        }
+        .profile-img-2-left-img img{
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .Lorem1{
+          width: 40%;
+          font-size: 18px;
+        }
+        .Connect-with {
+          width: 100%;
+          background: #3972bf;
+          color:white;
+          padding: 10px 0px;
+          text-align: center;
+          font-size: 20px;
+
+        }
+       
+.profile-img-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -145px;
+    padding: 0px 20px;
+}
+.profile-img-3-left{
+  width: 33%;
+}
+.profile-img-3-left{
+  padding: 20px;
+}
+.profile-img-3-left{
+  font-size: 18px;
+
+}
+.profile-img-3-left b{
+  padding: 0px 20px;
+}
       </style>
 </head>
 
@@ -163,7 +225,7 @@
                <div class="col-md-2">
                     <ul class="side-nav">
                         <li class="active"> <a href="dashboard.html"><img src="./Img/dashborad.png">Dashboard</a></li>
-                        <li><a href="profile.html" ><img src="./Img/profile.png">Profile</a></li>
+                      
                        
                     </ul>
                 </div>
@@ -227,57 +289,208 @@
                       </div>
                 </div>
                     </div>
-                    <div class="row p-4">
-                        <div class="container mt-4 bord-area">
-                            <h3>Ranking</h3>
-                            <table class="table-custom">
-                          
-                                <thead class="table-head bg-primary text-white text-center">
-                                  <tr>
-                                    <th>No</th>
-                                    <th>Name Of School</th>
-                                    <th>City</th>
-                                    <th>Level 1</th>
-                                    <th>Level 2</th>
-                                    <th>Level 3</th>
-                                    <th>Rank</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="tr">1</td>
-                                        <td>Ashoka School</td>
-                                        <td class="tr">Banaras</td>
-                                        <td>Complete</td>
-                                        <td class="tr">Complete</td>
-                                        <td>Complete</td>
-                                        <td colspan="3" class="crt-btn tr">
-                                            <a href="#." class="bg-primary text-white border-0">FIRST</a>
-                                            
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                      <td class="tr">1</td>
-                                      <td>Ashoka School</td>
-                                      <td class="tr">Banaras</td>
-                                      <td>Complete</td>
-                                      <td class="tr">Complete</td>
-                                      <td>Complete</td>
-                                      <td colspan="3" class="crt-btn tr">
-                                          <a href="#." class="bg-primary text-white border-0">FIRST</a>
-                                          
-                                      </td>
-                                  </tr>
-                                </tbody>
-                              </table>
+
+
+
+                    <!-- profile -->
+                   
+                    <div class="container mx-auto my-4">
+                      <div>
+                        <h2 class="p-4 Admin">Admin Profile</h2>
+                        <div class="bg-white ">
+                        <div class="profile-img-1">
+                          <img src="./Img/pofile-dashboad.jpg" alt="">
                         </div>
+                        <div class="profile-img-2">
+                          <div class="profile-img-2-left">
+                            <div class="profile-img-2-left-img">
+                              <img   src="./Img/new-profile-img.jpg" alt="">
+                            </div>
+                            <h2 class="py-4">Rakesh Kumar</h2>
+                            <p class="Lorem1 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quod exercitationem eveniet laudantium. </p>
+                            <div class="my-5 px-6 Connect-with">
+                             Connect
+                                with <span class="font-bold">Plastic Shoonya</span></a>
+                            </div>
+                          </div>
+                          <div class="profile-img-2-right">
+                            
+                          </div>
+
+                        </div>
+
+
+                        <div class="profile-img-3">
+                          <div class="profile-img-3-left">
+                            <p>
+                              <b class=" font-semibold">School Type: </b>
+                                  School
+                            </p>
+
+
+                            </div>
+
+                            <div class="profile-img-3-left">
+                              <p>
+                                <b class=" font-semibold">School Address: </b>
+                                Delhi India
+                              </p>
+  
+  
+                              </div>
+
+                              <div class="profile-img-3-left">
+                                <p>
+                                  <b class=" font-semibold">Email address: </b>
+                                  rakesh@gmail.com
+                                </p>
+    
+    
+                                </div>
+                                <div class="profile-img-3-left">
+                                  <p>
+                                    <b class=" font-semibold">City: </b>
+                                    delhi
+                                  </p>
+      
+      
+                                  </div>
+                                  <div class="profile-img-3-left">
+                                    <p>
+                                      <b class=" font-semibold">State:  </b>
+                                      Delhi
+                                    </p>
+        
+        
+                                    </div>
+                                    <div class="profile-img-3-left">
+                                      <p>
+                                        <b class=" font-semibold">Pincode: </b>
+                                        110001
+                                      </p>
+          
+          
+                                      </div>
+                                      <div class="profile-img-3-left">
+                                        <p>
+                                          <b class=" font-semibold">Phone Number: </b>
+                                          9876543210
+                                        </p>
+            
+            
+                                        </div>
+
+                        </div>
+                          
+
+
+                          <!-- <div class="flex justify-center">
+                            <img src="./Img/test2.png" alt=""
+                              class="rounded-full mx-auto absolute -top-20 w-32 h-32 shadow-md border-4 border-white transition duration-200 transform hover:scale-110 object-cover">
+                          </div>
+                  
+                          <div class="mt-16">
+                            <h1 class="font-bold text-center text-3xl text-gray-900">Rakesh Kumar</h1>
+                            <p class="text-center text-sm text-gray-400 font-medium">Sp.jain school</p>
+                            <p>
+                              <span>
+                  
+                              </span>
+                            </p>
+                            <div class="my-5 px-6">
+                              <a href="#"
+                                class="text-gray-200 block rounded-lg text-center font-medium leading-6 px-6 py-3 bg-gray-900 hover:bg-black hover:text-white">Connect
+                                with <span class="font-bold">Plastic Shoonya</span></a>
+                            </div>
+                            <div class="flex justify-between items-center my-5 px-6">
+                              <a href=""
+                                class="text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded transition duration-150 ease-in font-medium text-sm text-center w-full py-3">Facebook</a>
+                              <a href=""
+                                class="text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded transition duration-150 ease-in font-medium text-sm text-center w-full py-3">Twitter</a>
+                              <a href=""
+                                class="text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded transition duration-150 ease-in font-medium text-sm text-center w-full py-3">Instagram</a>
+                              <a href=""
+                                class="text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded transition duration-150 ease-in font-medium text-sm text-center w-full py-3">Email</a>
+                            </div>
+                  
+                            <div class="w-full">
+                              <h3 class="font-medium text-gray-900 text-left px-6"></h3>
+                              <div class="mt-5 w-full flex flex-col items-center overflow-hidden text-sm">
+                                <a href="#"
+                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150">
+                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
+                                    class="rounded-full h-6 shadow-md inline-block mr-2">
+                                  <b class=" font-semibold">School Type: </b>
+                                  School
+                  
+                                </a>
+                  
+                                <a href="#"
+                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150">
+                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
+                                    class="rounded-full h-6 shadow-md inline-block mr-2">
+                                  <b class=" font-semibold">School Address : </b>
+                                  Delhi India
+                                </a>
+                  
+                                <a href="#"
+                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150">
+                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
+                                    class="rounded-full h-6 shadow-md inline-block mr-2">
+                                  <b class=" font-semibold">Email address: </b>
+                                  rakesh@gmail.com
+                                </a>
+                  
+                                <a href="#"
+                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150">
+                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
+                                    class="rounded-full h-6 shadow-md inline-block mr-2">
+                                  <b class=" font-semibold">City: </b>
+                                  delhi
+                                </a>
+                  
+                                <a href="#"
+                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150 overflow-hidden">
+                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
+                                    class="rounded-full h-6 shadow-md inline-block mr-2">
+                                  <b class=" font-semibold">State: </b>
+                                  Delhi
+                                </a>
+                                <a href="#"
+                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150 overflow-hidden">
+                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
+                                    class="rounded-full h-6 shadow-md inline-block mr-2">
+                                  <b class=" font-semibold">Pincode: </b>
+                                  110001
+                                </a>
+                                <a href="#"
+                                  class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150 overflow-hidden">
+                                  <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt=""
+                                    class="rounded-full h-6 shadow-md inline-block mr-2">
+                                  <b class=" font-semibold">Phone Number: </b>
+                                  9876543210
+                                </a>
+                  
+                  
+                  
+                              </div>
+                            </div>
+                          </div> -->
+                        </div>
+                  
+                      </div>
                     </div>
+                 
                   
                 </div>
+               
             </div>
 
         </div>
     </section>
+
+
+    
 </body>
 
 </html>

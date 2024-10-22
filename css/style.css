@@ -2,6 +2,10 @@
     font-family:  Monschon;
     src: url(../monschone-regular-monschone-regular-400.otf);
   } */
+   *{
+    margin: 0px;
+    box-sizing: border-box;
+   }
 html{
   scroll-behavior: smooth;
 }
@@ -93,6 +97,18 @@ font-weight: 500;
   font-size: 24px ;
 font-family: "Montserrat", sans-serif;
 font-weight: 500;
+}
+@media(max-width: 1300px){
+  .hero-section-title{
+    font-size: 20px ;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    }
+    .hero-section-title2{
+      font-size: 18px ;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    }
 }
 .slider1{
     top: 11% !important;
@@ -398,4 +414,11 @@ transition: 0.5s;
   .complete-stages .step-stages > div:hover .arrow-rotate{
  transform: rotate(0deg);
    
+  }
+  .arrow-rotate{
+    transform: rotate(-45deg);
+    transition: 0.5s;
+  }
+  .arrow-rotate:hover{
+    transform: rotate(0deg);
   }
