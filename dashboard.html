@@ -17,9 +17,11 @@
     <title>CRM</title>
     <style>
         /* Card styling */
+        .profile-main-box{
+        }
         .lesson-card {
           background-color: #fdf3e6;
-          padding: 15px;
+          padding: 25px 15px;
           border-radius: 15px;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
           display: flex;
@@ -143,7 +145,16 @@
         .profile-img-2 {
           position: relative;
           top: -100px;
+          display: flex;
+          justify-content: space-between;
+       
           padding: 20px;
+        }
+        .profile-img-2-left{
+          width: 30%;
+        }
+        .profile-img-2-right{
+          width: 70%;
         }
         .profile-img-2-left-img{
           border-radius: 50%;
@@ -158,7 +169,7 @@
           object-fit: cover;
         }
         .Lorem1{
-          width: 40%;
+          width: 100%;
           font-size: 18px;
         }
         .Connect-with {
@@ -166,6 +177,7 @@
           background: #3972bf;
           color:white;
           padding: 10px 0px;
+          margin-top: -100px;
           text-align: center;
           font-size: 20px;
 
@@ -176,11 +188,12 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: -145px;
+    margin-top: 20px;
+    gap: 10px;
     padding: 0px 20px;
 }
 .profile-img-3-left{
-  width: 33%;
+  width: 31%;
 }
 .profile-img-3-left{
   padding: 20px;
@@ -191,6 +204,16 @@
 }
 .profile-img-3-left b{
   padding: 0px 20px;
+}
+.profile-img-3-left{
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.upload button{
+  border: 0px ;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  
 }
       </style>
 </head>
@@ -230,74 +253,16 @@
                     </ul>
                 </div>
                 <div class="col-md-10 bord-area">
-                    <div class="row">
-                        <div class="col-md-3">
-                           
-                                <div class="lesson-card ACTIVATE">
-                                    <div class="lesson-details">
-                                      <div class="lesson-icon ">
-                                        <img src="./Img/new-img3.png" class="w" alt="">
-                                      </div>
-                                      <p class="lesson-count">ACTIVATE</p>
-                                      <p class="lesson-text">Level 1 – INSPIRE</p>
-                                    </div>
-                                    <div class="progress-circle">
-                                      <svg>
-                                        <circle class="bg-circle" cx="30" cy="30" r="28" />
-                                        <circle class="progress-bar" cx="30" cy="30" r="28" />
-                                      </svg>
-                                      <div class="progress-text">33%</div>
-                                    </div>
-                                  </div>
-                        </div>
-                        <div class="col-md-3">
-                           
-                          <div class="lesson-card ANALYSE">
-                            <div class="lesson-details">
-                              <div class="lesson-icon ">
-                                <img src="./Img/new-img1.png" class="w" alt="">
-                              </div>
-                              <p class="lesson-count">ANALYSE</p>
-                              <p class="lesson-text">Level 2: ANALYSE</p>
-                            </div>
-                            <div class="progress-circle">
-                              <svg>
-                                <circle class="bg-circle" cx="30" cy="30" r="28" />
-                                <circle class="progress-bar" cx="30" cy="30" r="28" />
-                              </svg>
-                              <div class="progress-text">66%</div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-md-3">
-                           
-                      <div class="lesson-card ACTION">
-                        <div class="lesson-details">
-                          <div class="lesson-icon ">
-                            <img src="./Img/new-imgg.png" alt="">
-                          </div>
-                          <p class="lesson-count">ACTION</p>
-                          <p class="lesson-text">Level 3: ACTION</p>
-                        </div>
-                        <div class="progress-circle">
-                          <svg>
-                            <circle class="bg-circle" cx="30" cy="30" r="28" />
-                            <circle class="progress-bar" cx="30" cy="30" r="28" />
-                          </svg>
-                          <div class="progress-text">100%</div>
-                        </div>
-                      </div>
-                </div>
-                    </div>
+                   
 
 
 
                     <!-- profile -->
                    
-                    <div class="container mx-auto my-4">
+                    <div class="container mx-auto my-1">
                       <div>
-                        <h2 class="p-4 Admin">Admin Profile</h2>
-                        <div class="bg-white ">
+                        <h2 class=" Admin">Admin Profile</h2>
+                        <div class="bg-white profile-main-box ">
                         <div class="profile-img-1">
                           <img src="./Img/pofile-dashboad.jpg" alt="">
                         </div>
@@ -308,16 +273,90 @@
                             </div>
                             <h2 class="py-4">Rakesh Kumar</h2>
                             <p class="Lorem1 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quod exercitationem eveniet laudantium. </p>
-                            <div class="my-5 px-6 Connect-with">
-                             Connect
-                                with <span class="font-bold">Plastic Shoonya</span></a>
-                            </div>
+                           
                           </div>
                           <div class="profile-img-2-right">
-                            
+                            <div class="row">
+                              <div class="col-md-4">
+                                 
+                                      <div class="lesson-card ACTIVATE">
+                                          <div class="lesson-details">
+                                            <div class="lesson-icon ">
+                                              <img src="./Img/new-img3.png" class="w" alt="">
+                                            </div>
+                                            <p class="lesson-count">ACTIVATE</p>
+                                            <p class="lesson-text">Level 1 – INSPIRE</p>
+
+                                            
+                                            <div class="upload">
+                                             <button>upload Evidence</button> 
+                                            </div>
+                                          </div>
+                                          <div class="progress-circle">
+                                            <svg>
+                                              <circle class="bg-circle" cx="30" cy="30" r="28" />
+                                              <circle class="progress-bar" cx="30" cy="30" r="28" />
+                                            </svg>
+                                            <div class="progress-text">33%</div>
+
+
+                                          </div>
+
+                                          
+                                        </div>
+                              </div>
+                              <div class="col-md-4">
+                                 
+                                <div class="lesson-card ANALYSE">
+                                  <div class="lesson-details">
+                                    <div class="lesson-icon ">
+                                      <img src="./Img/new-img1.png" class="w" alt="">
+                                    </div>
+                                    <p class="lesson-count">ANALYSE</p>
+                                    <p class="lesson-text">Level 2: ANALYSE</p>
+                                    <div class="upload">
+                                      <button>upload Evidence</button> 
+                                     </div>
+                                  </div>
+                                  <div class="progress-circle">
+                                    <svg>
+                                      <circle class="bg-circle" cx="30" cy="30" r="28" />
+                                      <circle class="progress-bar" cx="30" cy="30" r="28" />
+                                    </svg>
+                                    <div class="progress-text">66%</div>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-md-4">
+                                 
+                            <div class="lesson-card ACTION">
+                              <div class="lesson-details">
+                                <div class="lesson-icon ">
+                                  <img src="./Img/new-imgg.png" alt="">
+                                </div>
+                                <p class="lesson-count">ACTION</p>
+                                <p class="lesson-text">Level 3: ACTION</p>
+                                <div class="upload">
+                                  <button>upload Evidence</button> 
+                                 </div>
+                              </div>
+                              <div class="progress-circle">
+                                <svg>
+                                  <circle class="bg-circle" cx="30" cy="30" r="28" />
+                                  <circle class="progress-bar" cx="30" cy="30" r="28" />
+                                </svg>
+                                <div class="progress-text">100%</div>
+                              </div>
+                            </div>
+                      </div>
+                          </div>
                           </div>
 
                         </div>
+                        <div class=" px-6 Connect-with">
+                          Connect
+                             with <span class="font-bold">Plastic Shoonya</span></a>
+                         </div>
 
 
                         <div class="profile-img-3">
