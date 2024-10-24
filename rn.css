@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #70cfc9, #3972bf);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.leaderboard-container {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.top-leaders {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.leader-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.leader-card .avatar {
+    width: 80px;
+    height: 80px;
+    background: #6a1b9a;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+}
+
+.leader-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.leader-card .designation {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.leader-card .amount {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:#0d3c3e;
+}
+
+.leaderboard-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 10px;
+    border-radius: 100px;
+    margin: 20px 0px;
+}
+
+.table-row.header {
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.table-row div {
+    width: 15%;
+    text-align: center;
+}
+.leader-card-2{
+    padding: 60px 0px;
+}
+.rank-img{
+   
+}
+.rank-img img{
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0px auto;
+}

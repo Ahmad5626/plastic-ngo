@@ -226,8 +226,8 @@
 </head>
 
 <body>
-
-  <div  class="Schedule-main">
+  <!-- ACTIVATE-BOX -->
+  <div  class="Schedule-main ACTIVATE-BOX">
     <div id="form-div">
       <i class="close-menu fa-solid fa-x" onclick="showScheduleForm()"></i>
       <form class="form" id="form1">
@@ -270,6 +270,99 @@
       </form>
     </div>
   </div>
+
+  <!-- ANALYSE BOX -->
+
+  <div  class=" Schedule-main1  ANALYSE-BOX">
+    <div id="form-div">
+      <i class="close-menu fa-solid fa-x" onclick="showScheduleForm1()"></i>
+      <form class="form" id="form1">
+        <h3 style="text-align: center;">Upload Evidence</h3>
+        
+        <p class="name">
+          <span>Browse to Upload</span>
+          <input name="file" type="file" class=" feedback-input" id="name" multiple />
+        </p>
+        
+        <p class="name">
+          <span>Name of activity</span>
+          <input name="activity" type="text" class=" feedback-input" id="activity" placeholder="activity" />
+        </p>
+        
+        <p class="name">
+          <span>Discription</span>
+          <textarea name="Discription"  class=" feedback-input" id="Discription" placeholder="Discription" ></textarea>
+        </p>
+        <p class="name">
+          <span>No of people participated</span>
+
+          <input name="participated" type="number" class=" feedback-input" id="participated" placeholder="Participated" />
+        </p>
+        <p class="name">
+          <span>No cy people impacted</span>
+
+          <input name="impacted" type="number" class=" feedback-input" id="number" placeholder="Impacted" />
+        </p>
+        
+        
+        
+        <div class="submit">
+          <button class="tn-upper  btn">
+            <a href="thankyouSchedule.html"  >Upload</a>
+          </button>
+          
+          
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- ACTION-BOX -->
+  <div  class=" Schedule-main2 ACTION-BOX">
+    <div id="form-div">
+      <i class="close-menu fa-solid fa-x" onclick="showScheduleForm2()"></i>
+      <form class="form" id="form1">
+        <h3 style="text-align: center;">Upload Evidence</h3>
+        
+        <p class="name">
+          <span>Browse to Upload</span>
+          <input name="file" type="file" class=" feedback-input" id="name" multiple />
+        </p>
+        
+        <p class="name">
+          <span>Name of activity</span>
+          <input name="activity" type="text" class=" feedback-input" id="activity" placeholder="activity" />
+        </p>
+        
+        <p class="name">
+          <span>Discription</span>
+          <textarea name="Discription"  class=" feedback-input" id="Discription" placeholder="Discription" ></textarea>
+        </p>
+        <p class="name">
+          <span>No of people participated</span>
+
+          <input name="participated" type="number" class=" feedback-input" id="participated" placeholder="Participated" />
+        </p>
+        <p class="name">
+          <span>No cy people impacted</span>
+
+          <input name="impacted" type="number" class=" feedback-input" id="number" placeholder="Impacted" />
+        </p>
+        
+        
+        
+        <div class="submit">
+          <button class="tn-upper  btn">
+            <a href="thankyouSchedule.html"  >Upload</a>
+          </button>
+          
+          
+        </div>
+      </form>
+    </div>
+  </div>
+
 
 
     <header class="bg-white shadow-sm">
@@ -368,7 +461,7 @@
                                     <p class="lesson-count">ANALYSE</p>
                                     <p class="lesson-text">Level 2: ANALYSE</p>
                                     <div class="upload">
-                                      <button>upload Evidence</button> 
+                                      <button onclick="showScheduleForm1()">upload Evidence</button> 
                                      </div>
                                   </div>
                                   <div class="progress-circle">
@@ -390,7 +483,7 @@
                                 <p class="lesson-count">ACTION</p>
                                 <p class="lesson-text">Level 3: ACTION</p>
                                 <div class="upload">
-                                  <button>upload Evidence</button> 
+                                  <button onclick="showScheduleForm2()">upload Evidence</button> 
                                  </div>
                               </div>
                               <div class="progress-circle">
@@ -493,6 +586,24 @@
 <script>
       function showScheduleForm(){
       let Form = document.getElementsByClassName('Schedule-main')[0];
+      console.log(Form);
+      
+      Form.classList.toggle('showScheduleForm');
+    }
+
+
+
+    function showScheduleForm1(){
+      let Form = document.getElementsByClassName('Schedule-main1')[0];
+      console.log(Form);
+      
+      Form.classList.toggle('showScheduleForm');
+    }
+
+
+
+    function showScheduleForm2(){
+      let Form = document.getElementsByClassName('Schedule-main2')[0];
       console.log(Form);
       
       Form.classList.toggle('showScheduleForm');
